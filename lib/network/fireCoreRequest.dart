@@ -14,18 +14,17 @@ StreamBuilder<QuerySnapshot> getMales(BuildContext context) {
             return new Text('Loading...');
           default:
             return new ListView(
-              children:
-                  snapshot.data.documents.map((DocumentSnapshot document) {
-                var image = document['image'];
-                var url = FirebaseStorage.instance
-                    .ref()
-                    .child(image)
-                    .getDownloadURL();
-                url.then((result) {
-                  return new Image.network(result);
-                }).catchError((error, stack) {});
-              }).toList(),
-            );
+                children:
+                    snapshot.data.documents.map((DocumentSnapshot document) {
+              var key = "image";
+              if (document.data.containsKey(key)) {
+                var image = document[key];
+                return new Image.network(image);
+              }
+              else {
+                return Text("no image");
+              }
+            }).toList());
         }
       });
 }
