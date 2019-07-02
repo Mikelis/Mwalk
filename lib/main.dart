@@ -10,6 +10,7 @@
 // the signup flow instead of on the home page.
 
 import 'package:flutter/material.dart';
+import 'network/fireCoreRequest.dart';
 
 void main() => runApp(MyApp());
 
@@ -36,7 +37,7 @@ class HomePage extends StatelessWidget {
       child: Container(
         color: Colors.white,
         alignment: Alignment.center,
-        child: Text('Home Page'),
+        child: getMales(context),
       ),
     );
   }

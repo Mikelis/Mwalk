@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "243737169245",
+    "firebase_url": "https://tryangle-27376.firebaseio.com",
+    "project_id": "tryangle-27376",
+    "storage_bucket": "tryangle-27376.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243737169245:android:d26f2e9f7fcc5c33",
+        "android_client_info": {
+          "package_name": "com.tryangle.m_walk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243737169245-vr8vg1321ra63sgaivqo3qqgspv8luph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSttIIlpsTQPZCVK26nskaYcjwEmMTivY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243737169245-vr8vg1321ra63sgaivqo3qqgspv8luph.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
