@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import "package:cloud_firestore/cloud_firestore.dart";
 import 'package:firebase_storage/firebase_storage.dart';
 import 'dart:async';
+import "package:m_walk/profile/ProfileWidget.dart";
+import 'package:m_walk/profile/moduls/Profile.dart';
 
-StreamBuilder<QuerySnapshot> getMales(BuildContext context) {
-  var snapshot = Firestore.instance.collection("males").snapshots();
+StreamBuilder<QuerySnapshot> getProfile(BuildContext context) {
+  var snapshot = Firestore.instance.collection("user").snapshots();
   return StreamBuilder(
       stream: snapshot,
       builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
@@ -15,16 +17,9 @@ StreamBuilder<QuerySnapshot> getMales(BuildContext context) {
           default:
             return new ListView(
                 children:
-                    snapshot.data.documents.map((DocumentSnapshot document) {
-              var key = "image";
-              if (document.data.containsKey(key)) {
-                var image = document[key];
-                return new Image.network(image);
-              }
-              else {
-                return Text("no image");
-              }
-            }).toList());
+                snapshot.data.documents.map((DocumentSnapshot document) {
+                  return ProfileWidget(data: Profile.fromJson(document.data));
+                }).toList());
         }
       });
 }
