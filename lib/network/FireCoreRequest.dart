@@ -27,10 +27,10 @@ StreamBuilder<QuerySnapshot> getProfile(BuildContext context) {
       });
 }
 
-Future<Uri> uploadProfilePic(String imageId) async {
+Future<dynamic> uploadProfilePic(String imageId) async {
   File imageFile = await ImagePicker.pickImage(source: ImageSource.camera);
   StorageReference ref =
-      FirebaseStorage.instance.ref().child(imageId).child("profile_images");
+      FirebaseStorage.instance.ref().child("profile_images").child(imageId);
   StorageUploadTask uploadTask = ref.putFile(imageFile);
   return (await uploadTask.onComplete).ref.getDownloadURL();
 }
