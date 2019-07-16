@@ -9,24 +9,24 @@ class ProfileWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Palette.blueSky,
-        title: Text("Profile"),
-      ),
-      body: Container(
-        child: getBody(data),
-      ),
+    return Row(
+      children: <Widget>[new Expanded(child: getBody(data))] ,
     );
   }
 
-  getBody(Profile profile) {
+  Widget getBody(Profile profile) {
     if (profile.image != null) {
       return new Image.network(profile.image);
-    }
-    else {
+    } else {
       return Text(profile.name);
     }
+//    else {
+//      return FlatButton(
+//          onPressed: () => {
+//                uploadProfilePic(profile.name).then((value) => value.toString())
+//              },
+//          color: Palette.greenLand,
+//          child: new Text("Upload Profile Image"));
+//    }
   }
 }
-
