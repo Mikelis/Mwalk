@@ -21,7 +21,7 @@ StreamBuilder<QuerySnapshot> getProfile(BuildContext context) {
             return new ListView(
                 children:
                     snapshot.data.documents.map((DocumentSnapshot document) {
-              return ProfileWidget(data: Profile.fromJson(document.data));
+              return ProfileWidget(data: Profile.fromJson(document));
             }).toList());
         }
       });

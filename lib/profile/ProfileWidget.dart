@@ -16,14 +16,13 @@ class ProfileWidget extends StatelessWidget {
   }
 
   Widget getBody(Profile profile) {
-    if (profile.image == null) {
-      //TODO change to =!
+    if (profile.image != null) {
       return new Image.network(profile.image);
     } else {
       return new Builder(
           builder: (context) => FlatButton(
               onPressed: () => {
-                    uploadProfilePic(profile.name)
+                    uploadProfilePic(profile.id)
                         .then((value) => value.toString())
                   },
               color: Palette.greenLand,
@@ -31,3 +30,6 @@ class ProfileWidget extends StatelessWidget {
     }
   }
 }
+
+https://firebasestorage.googleapis.com/v0/b/tryangle-27376.appspot.com/o/profile_images%2FLHLJgljhE49EGS1AjrdM?alt=media
+https://firebasestorage.googleapis.com/v0/b/tryangle-27376.appspot.com/o/profile_images/LHLJgljhE49EGS1AjrdM
