@@ -19,6 +19,7 @@ StreamBuilder<QuerySnapshot> getProfile(BuildContext context) {
             return new Text('Loading...');
           default:
             return new ListView(
+                scrollDirection: Axis.horizontal,
                 children:
                     snapshot.data.documents.map((DocumentSnapshot document) {
               return ProfileWidget(data: Profile.fromJson(document));

@@ -30,6 +30,3 @@ class ProfileWidget extends StatelessWidget {
     }
   }
 }
-
-https://firebasestorage.googleapis.com/v0/b/tryangle-27376.appspot.com/o/profile_images%2FLHLJgljhE49EGS1AjrdM?alt=media
-https://firebasestorage.googleapis.com/v0/b/tryangle-27376.appspot.com/o/profile_images/LHLJgljhE49EGS1AjrdM

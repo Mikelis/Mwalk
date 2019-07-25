@@ -10,6 +10,7 @@
 // the signup flow instead of on the home page.
 
 import 'package:flutter/material.dart';
+import 'package:m_walk/strings/Strings.dart';
 import 'network/FireCoreRequest.dart';
 
 void main() => runApp(MyApp());
@@ -32,12 +33,15 @@ class MyApp extends StatelessWidget {
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return DefaultTextStyle(
-      style: Theme.of(context).textTheme.display1,
-      child: Container(
-        color: Colors.white,
-        alignment: Alignment.center,
-        child: getProfile(context),
+    return MaterialApp(
+      title: Strings.userListTitle,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text(Strings.userListTitle),
+        ),
+        body: Center(
+          child: getProfile(context),
+        ),
       ),
     );
   }
