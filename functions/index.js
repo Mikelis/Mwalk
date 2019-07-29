@@ -28,7 +28,7 @@ exports.saveFieldOnStorageChange = functions.storage.object().onFinalize(async (
     let ref = db.collection("user").doc(fileName)
     let escapedPath = require('querystring').escape(filePath)
 
-    let imageUri = "https://firebasestorage.googleapis.com/v0/b/tryangle-27376.appspot.com/o/"+escapedPath+"?alt=media"
+    let imageUri = "https://firebasestorage.googleapis.com/v0/b/momwalk-95f8a.appspot.com/o/"+escapedPath+"?alt=media"
 
     let setWithOptions = ref.set({
       image:imageUri

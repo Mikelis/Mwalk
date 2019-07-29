@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>243737169245-ukmr2se9m2rc7j12v7k16vgk4gckhdvr.apps.googleusercontent.com</string>
+	<string>1020687682337-1sniu7gobbdme40h64na4bqj19hnelpg.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.243737169245-ukmr2se9m2rc7j12v7k16vgk4gckhdvr</string>
+	<string>com.googleusercontent.apps.1020687682337-1sniu7gobbdme40h64na4bqj19hnelpg</string>
 	<key>API_KEY</key>
-	<string>AIzaSyD4e_WRLW1jD7Q8WeHQai11fRwNjdQ5qHE</string>
+	<string>AIzaSyC5OSynp7r5DxF55ypjBExoZIzKSdN_Re8</string>
 	<key>GCM_SENDER_ID</key>
-	<string>243737169245</string>
+	<string>1020687682337</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.tryangle.mWalk</string>
 	<key>PROJECT_ID</key>
-	<string>tryangle-27376</string>
+	<string>momwalk-95f8a</string>
 	<key>STORAGE_BUCKET</key>
-	<string>tryangle-27376.appspot.com</string>
+	<string>momwalk-95f8a.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:243737169245:ios:29c2c0a4c2db333f</string>
+	<string>1:1020687682337:ios:29c2c0a4c2db333f</string>
 	<key>DATABASE_URL</key>
-	<string>https://tryangle-27376.firebaseio.com</string>
+	<string>https://momwalk-95f8a.firebaseio.com</string>
 </dict>
 </plist>

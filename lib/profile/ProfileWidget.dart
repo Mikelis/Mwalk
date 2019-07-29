@@ -21,24 +21,19 @@ class ProfileWidget extends StatelessWidget {
 //      ],
 //    );
     return Container(
-//      constraints: BoxConstraints.expand(width: 300),
+      constraints: BoxConstraints.expand(width: 300),
       color: Palette.greenLand,
       alignment: Alignment.topCenter,
-      child: Image.network(
-        data.image,
-        alignment: Alignment.center,
-        fit: BoxFit.fitWidth,
-        width: 300,
-      ),
+      child: getBody(data)
     );
   }
 
   Widget getBody(Profile profile) {
     if (profile.image != null) {
-//      return Image.network(
-//        profile.image,
-//        fit: BoxFit.contain,
-//      );
+      return Image.network(
+        profile.image,
+        fit: BoxFit.contain,
+      );
 
     } else {
       return new Builder(
